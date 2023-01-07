@@ -13,12 +13,13 @@ abstract class Testcase extends \PHPUnit\Framework\TestCase
      */
     public function testSolution($expected, $params): void
     {
-        $result = $this->getMethodToTest()(...$params);
+        $result = $this->getResults(...$params);
 
+        // cannot use assertSame() as I also have to compare objects
         Assert::assertEquals($expected, $result);
     }
 
-    abstract protected function getMethodToTest(): callable;
+    abstract protected function getResults(...$params): mixed;
 
     abstract protected function dataProvider(): iterable;
 }

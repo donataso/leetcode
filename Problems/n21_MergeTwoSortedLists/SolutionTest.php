@@ -9,16 +9,19 @@ use Leetcode\Testcase;
 
 class SolutionTest extends Testcase
 {
-    protected function getMethodToTest(): callable
+    protected function getResults(...$params): ?ListNode
     {
-        return (new Solution())->mergeTwoLists(...);
+        return (new Solution())->mergeTwoLists(...$params);
     }
 
     protected function dataProvider(): iterable
     {
         return [
             [
-                'expected' => new ListNode(1, new ListNode(2, new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(4)))))),
+                'expected' => new ListNode(
+                    1,
+                    new ListNode(2, new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(4))))),
+                ),
                 'params' => [
                     new ListNode(1, new ListNode(2, new ListNode(4))),
                     new ListNode(2, new ListNode(3, new ListNode(4))),
