@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Problems\n21_MergeTwoSortedLists;
 
-use ListNode;
-use Testcase;
+use Leetcode\ListNode;
+use Leetcode\Testcase;
 
 class SolutionTest extends Testcase
 {

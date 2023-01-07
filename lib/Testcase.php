@@ -2,6 +2,8 @@
 
 declare(strict_types=1);
 
+namespace Leetcode;
+
 use PHPUnit\Framework\Assert;
 
 abstract class Testcase extends \PHPUnit\Framework\TestCase

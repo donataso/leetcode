@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Problems\nXYZ_ProblemName;
 
-use Testcase;
+use Leetcode\Testcase;
 
 class SolutionTest extends Testcase
 {
