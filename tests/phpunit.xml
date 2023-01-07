@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<phpunit
+        bootstrap="tests/bootstrap.php"
+        verbose="true"
+        colors="true"
+        noInteraction="true"
+>
+    <php>
+        <ini name="error_reporting" value="-1" />
+        <const name="PHPUNIT" value="true" />
+    </php>
+</phpunit>
