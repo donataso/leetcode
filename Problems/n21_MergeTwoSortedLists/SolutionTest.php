@@ -17,7 +17,7 @@ class SolutionTest extends Testcase
     protected function dataProvider(): iterable
     {
         return [
-            [
+            'same length inputs' => [
                 'expected' => new ListNode(
                     1,
                     new ListNode(2, new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(4))))),
@@ -27,28 +27,28 @@ class SolutionTest extends Testcase
                     new ListNode(2, new ListNode(3, new ListNode(4))),
                 ]
             ],
-            [
+            'short inputs' => [
                 'expected' => new ListNode(1, new ListNode(2)),
                 'params' => [
                     new ListNode(1),
                     new ListNode(2),
                 ],
             ],
-            [
+            'only nulls' => [
                 'expected' => null,
                 'params' => [
                     null,
                     null,
                 ],
             ],
-            [
+            'one null' => [
                 'expected' => new ListNode(1, new ListNode(2, new ListNode(4))),
                 'params' => [
                     new ListNode(1, new ListNode(2, new ListNode(4))),
                     null,
                 ],
             ],
-            [
+            'one input shorter' => [
                 'expected' => new ListNode(1, new ListNode(2, new ListNode(2, new ListNode(3, new ListNode(4))))),
                 'params' => [
                     new ListNode(1, new ListNode(2, new ListNode(4))),

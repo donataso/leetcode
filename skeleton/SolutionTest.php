@@ -17,7 +17,7 @@ class SolutionTest extends Testcase
     protected function dataProvider(): iterable
     {
         return [
-            [
+            'case X' => [
                 'expected' => [],
                 'params' => [
                     'param1',

@@ -24,11 +24,8 @@ class Solution
             $head = $head->next;
         }
 
-        if (!$list1) {
-            $head->next = $list2;
-        } elseif (!$list2) {
-            $head->next = $list1;
-        }
+        // add remaining list in case lengths were different
+        $head->next = $list1 ?? $list2;
 
         return $result->next;
     }
