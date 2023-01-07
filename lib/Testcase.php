@@ -9,7 +9,7 @@ abstract class Testcase extends \PHPUnit\Framework\TestCase
     /**
      * @dataProvider dataProvider
      */
-    public function testSolution($expected, ...$params): void
+    public function testSolution($expected, $params): void
     {
         $result = $this->getMethodToTest()(...$params);
 

@@ -6,10 +6,6 @@ namespace Problems\n21_MergeTwoSortedLists;
 
 use ListNode;
 
-//include dirname(__FILE__) . '/../../vendor/autoload.php';
-
-// php -dxdebug.mode=debug -dxdebug.client_host=127.0.0.1 -dxdebug.client_port=9003 -dxdebug.start_with_request=yes 21_MergeTwoSortedLists/Solution.php
-
 class Solution
 {
     public function mergeTwoLists(?ListNode $list1, ?ListNode $list2): ?ListNode
@@ -37,11 +33,3 @@ class Solution
         return $result->next;
     }
 }
-
-//$list1 = new ListNode(1, new ListNode(2, new ListNode(4)));
-//$list2 = new ListNode(2, new ListNode(3, new ListNode(4)));
-$list1 = new ListNode(1);
-$list2 = new ListNode(2);
-$head = (new Solution())->mergeTwoLists($list1, $list2);
-
-echo $head . PHP_EOL;
