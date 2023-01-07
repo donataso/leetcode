@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Problems\nXYZ_ProblemName;
 
 use Testcase;

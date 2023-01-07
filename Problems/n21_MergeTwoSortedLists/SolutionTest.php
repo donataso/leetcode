@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Problems\n21_MergeTwoSortedLists;
 
 use ListNode;
