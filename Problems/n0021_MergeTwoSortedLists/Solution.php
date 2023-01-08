@@ -2,11 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Problems\n21_MergeTwoSortedLists;
+namespace Problems\n0021_MergeTwoSortedLists;
 
 use Leetcode\ListNode;
 
-class Solution
+/*
+ * https://leetcode.com/problems/merge-two-sorted-lists/description/
+ * Difficulty: easy
+ */
+final class Solution
 {
     public function mergeTwoLists(?ListNode $list1, ?ListNode $list2): ?ListNode
     {

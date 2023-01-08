@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Problems\nXYZ_ProblemName;
 
-class Solution
+/*
+ * url to description
+ * Difficulty: easy|medium|hard
+ */
+final class Solution
 {
-    public function main(): void
+    public function solve(...$params): mixed
     {
+        return null;
     }
 }

@@ -4,14 +4,17 @@ declare(strict_types=1);
 
 namespace Problems\nXYZ_ProblemName;
 
-use Leetcode\Testcase;
+use PHPUnit\Framework\Assert;
+use PHPUnit\Framework\TestCase;
 
-class SolutionTest extends Testcase
+final class SolutionTest extends Testcase
 {
-
-    protected function getMethodToTest(): callable
+    /**
+     * @dataProvider dataProvider
+     */
+    public function testSolution($expected, $params): void
     {
-        return (new Solution())->main(...);
+        Assert::assertEquals($expected, (new Solution())->solve(...$params));
     }
 
     protected function dataProvider(): iterable
