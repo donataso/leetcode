@@ -50,9 +50,7 @@ final class Solution
             }
 
             // enqueue neighbors
-            foreach ($this->getEmptyNeighbors($m, $n, $distance + 1, $rooms) as $neighbor) {
-                $queue[] = $neighbor;
-            }
+            array_push($queue, ...$this->getEmptyNeighbors($m, $n, $distance + 1, $rooms));
         }
     }
 
