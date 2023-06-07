@@ -12,7 +12,7 @@ final class SolutionTest extends Testcase
     /**
      * @dataProvider dataProvider
      */
-    public function testSolution($expected, $params): void
+    public function testSolution(array $expected, array $params): void
     {
         Assert::assertEquals($expected, (new Solution())->fullJustify(...$params));
     }

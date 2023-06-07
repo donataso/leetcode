@@ -12,7 +12,7 @@ final class SolutionTest extends Testcase
     /**
      * @dataProvider dataProvider
      */
-    public function testSolution($expected, $params): void
+    public function testSolution(array $expected, array $params): void
     {
         Assert::assertEquals($expected, (new Solution())->solve(...$params));
     }
@@ -20,7 +20,7 @@ final class SolutionTest extends Testcase
     protected function dataProvider(): iterable
     {
         return [
-            'case X' => [
+            'case 1' => [
                 'expected' => [],
                 'params' => [
                     'param1',
