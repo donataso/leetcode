@@ -32,6 +32,27 @@ class ListNode
         return $result;
     }
 
+    public function last(): self
+    {
+        $last = $this;
+        while ($last->next) {
+            $last = $last->next;
+        }
+
+        return $last;
+    }
+
+    public function nth(int $pos): ?self
+    {
+        $head = $this;
+        $idx = 0;
+        while ($head && $pos > $idx++) {
+            $head = $head->next;
+        }
+
+        return $head;
+    }
+
     /**
      * @param int[] $input
      */

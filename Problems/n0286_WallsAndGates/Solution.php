@@ -2,17 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Problems\nXXXX_WallsAndGates;
+namespace Problems\n0286_WallsAndGates;
 
 /*
- * This is a premium task, I cannot access it, just got a screenshot.
- * Difficulty: ?
- *
- * You are given an m*n grid initialized with three possible values:
- * * -1: a gate or obstacle
- * * 0: gate
- * * INF: empty room, numeric value is 2^31 - 1
- * Fill each empty room with distance to the nearest gate. If it's impossible to reach any gate, fill with INF.
+ * https://leetcode.com/problems/walls-and-gates/
+ * Difficulty: medium
  */
 final class Solution
 {

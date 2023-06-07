@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Problems\nXYZ_ProblemName;
 
 /*
- * url to description
+ * url
  * Difficulty: easy|medium|hard
  */
 final class Solution

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Problems\nXXXX_WallsAndGates;
+namespace Problems\n0286_WallsAndGates;
 
 use PHPUnit\Framework\Assert;
 use PHPUnit\Framework\TestCase;
